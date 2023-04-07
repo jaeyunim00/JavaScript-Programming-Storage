@@ -1,2 +1,5 @@
 23 59
 1000
+
+https://www.acmicpc.net/problem/2884
+https://www.acmicpc.net/problem/2525
