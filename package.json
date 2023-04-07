@@ -1,0 +1,17 @@
+{
+  "name": "javascript-programming-storage",
+  "version": "1.0.0",
+  "description": "- 코딩테스트를 위한 자바스크립트 소스코드 저장소",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaeyunim00/JavaScript-Programming-Storage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaeyunim00/JavaScript-Programming-Storage/issues"
+  },
+  "homepage": "https://github.com/jaeyunim00/JavaScript-Programming-Storage#readme"
+}
