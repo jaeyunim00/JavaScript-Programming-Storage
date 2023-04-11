@@ -15,3 +15,7 @@
 - 단어 정렬\*\*\*
   https://www.acmicpc.net/problem/1181
   **sort에서 문자열을 따로 처리할 때는 비교 연산자를 사용한다.**
+- 좌표 압축 \*\*\*
+  https://www.acmicpc.net/problem/18870
+- 소트인사이드
+  https://www.acmicpc.net/problem/1427
