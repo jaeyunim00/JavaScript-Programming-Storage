@@ -17,3 +17,11 @@
 #### A -> B
 
 - https://www.acmicpc.net/problem/16953
+
+#### 수들의 합
+
+- https://www.acmicpc.net/problem/1789
+
+#### 신입사원
+
+- https://www.acmicpc.net/problem/1946
