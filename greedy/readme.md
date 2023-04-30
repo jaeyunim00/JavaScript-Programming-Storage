@@ -29,3 +29,13 @@
 #### 주유소 \*\*\*
 
 - https://www.acmicpc.net/problem/13305
+
+BigInt를 사용한 큰 값 표현
+
+#### 회의실 배정 \*\*\*
+
+- https://www.acmicpc.net/problem/1931
+
+#### 풍선 맞추기
+
+-https://www.acmicpc.net/problem/11509

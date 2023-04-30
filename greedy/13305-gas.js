@@ -8,7 +8,7 @@ const totalDistance = distance_arr.reduce((a, b) => a + b);
 
 const cities = input[2].split(" ").map(Number);
 
-let answer = 0;
+let answer = BigInt(0);
 
 let current_city = cities[0];
 
@@ -16,7 +16,7 @@ for (let i = 0; i < city_num - 1; i++) {
   if (current_city > cities[i]) {
     current_city = cities[i];
   }
-  answer += distance_arr[i] * current_city;
+  answer += BigInt(distance_arr[i]) * BigInt(current_city);
 }
 
-console.log(answer);
+console.log(String(answer));
