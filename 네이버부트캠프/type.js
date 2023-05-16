@@ -11,7 +11,6 @@ function q2(arr) {
 
   console.log(type.BOOL);
   for (let i = 0; i < arr.length; i++) {
-    console.log(type.arr[0]);
   }
 }
 
