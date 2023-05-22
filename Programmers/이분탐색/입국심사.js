@@ -1,28 +1,22 @@
 function solution(n, times) {
-  let success = 0;
-  let arr = [];
-  // for (let i = 1; i <= n; i++) {
-  //   for (let j = 0; j < times.length; j++) {
-  //     arr.push(times[j] * i);
-  //   }
-  // }
-  let times = times.sort((a, b) => a - b);
-  let count = 0;
-  while (true) {
-    if (count == 6) {
-      return;
+  times.sort((a, b) => a - b);
+  let left = 0;
+  let right = times[times.length - 1] * n;
+  //0~최대시간의 중간
+  let mid = parseInt((left + right) / 2);
+
+  while (left <= right) {
+    const cnt = times.reduce((acc, cur) => acc + parseInt(mid / cur), 0);
+    if (cnt >= n) {
+      right = mid - 1;
     } else {
+      left = mid + 1;
     }
+
+    mid = parseInt((left + right) / 2);
   }
 
-  arr = arr.sort((a, b) => a - b);
-
-  while (success !== n - 1) {
-    arr = arr.slice(1);
-    success++;
-  }
-
-  return arr[0];
+  return left;
 }
 
 console.log(solution(6, [7, 10]));
