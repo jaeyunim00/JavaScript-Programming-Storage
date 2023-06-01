@@ -8,7 +8,7 @@
       "type": "node",
       "request": "launch",
       "name": "js 디버깅",
-      "program": "${workspaceFolder}/Programmers/스택_큐/기능개발.js"
+      "program": "${workspaceFolder}/Programmers/스택_큐/트럭.js"
     }
   ]
 }
