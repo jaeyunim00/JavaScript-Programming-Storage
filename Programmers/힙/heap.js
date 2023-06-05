@@ -85,10 +85,10 @@ class Heap {
         smallerIdx = rightIdx;
       }
 
-      this.swap(index, smallerIdx);
-      index = smallerIdx;
-      leftIdx = index * 2 + 1;
-      rightIdx = index * 2 + 2;
+      this.swap(index, smallerIdx); //두 노드의 값을 교체
+      index = smallerIdx; //인덱스를 더 작은 값의 자식 노드의 인덱스로 변경
+      leftIdx = index * 2 + 1; //왼쪽 노드의 인덱스 최신화
+      rightIdx = index * 2 + 2; //오른쪽 노드의 인덱스 최신화
     }
   }
 }
