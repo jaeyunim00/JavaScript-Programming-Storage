@@ -8,7 +8,7 @@
       "type": "node",
       "request": "launch",
       "name": "js 디버깅",
-      "program": "${workspaceFolder}/Programmers/dfs-bfs/target.js"
+      "program": "${workspaceFolder}/Programmers/exam.js"
     }
   ]
 }

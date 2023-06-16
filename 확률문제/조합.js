@@ -1,17 +1,15 @@
-const list = ["a", "b", "c", "d", "e"];
-const pick = 3;
-const result = [];
-
-const combination = (items, index) => {
-  if (items.length == pick) {
-    result.push(items);
-    return;
+function getCombi(arr, selectNumber) {
+  if (selectNumber == 1) {
+    return arr.map((x) => [x]);
   }
-  for (let i = index; i < list.length; i++) {
-    combination(`${items}${list[i]}`, i + 1);
-  }
-};
+  let result = [];
+  arr.forEach((fixed, index, origin) => {
+    const rest = origin.slice(index + 1);
+    const combi = getCombi(rest, selectNumber - 1);
+    const attached = combi.map((x) => [fixed, ...x]);
+    result.push(...attached);
+  });
+  return result;
+}
 
-combination("", 0);
-
-console.log(result);
+console.log(getCombi([1, 2, 3, 4], 2));

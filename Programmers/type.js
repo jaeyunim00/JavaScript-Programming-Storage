@@ -10,8 +10,7 @@ function q2(arr) {
   };
 
   console.log(type.BOOL);
-  for (let i = 0; i < arr.length; i++) {
-  }
+  for (let i = 0; i < arr.length; i++) {}
 }
 
 //최대 128byte, type은 1~100개

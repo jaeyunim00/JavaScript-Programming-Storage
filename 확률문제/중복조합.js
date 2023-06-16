@@ -1,5 +1,5 @@
-const list = ["a", "b", "c", "d", "e"];
-const pick = 3;
+const list = [1, 2, 3, 4];
+const pick = 2;
 const result = [];
 
 function pwc(items, index) {
