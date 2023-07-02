@@ -8,7 +8,7 @@
       "type": "node",
       "request": "launch",
       "name": "js 디버깅",
-      "program": "${workspaceFolder}/Programmers/exam.js"
+      "program": "${workspaceFolder}/Programmers/구현/테트로미노.js"
     }
   ]
 }

@@ -11,8 +11,6 @@ function solution(rows, columns, queries) {
     init_arr.push(temp);
   }
 
-  console.log(init_arr);
-
   //메인
   for (let k = 0; k < queries.length; k++) {
     let x1 = queries[k][0] - 1,
@@ -29,7 +27,6 @@ function solution(rows, columns, queries) {
       }
       temp.push(init_arr[x_p][y_p]);
       y_p++;
-      init_arr[x_p][y_p - 1] = init_arr[x_p][y_p];
     }
     while (true) {
       if (x_p >= x2) {
@@ -37,7 +34,6 @@ function solution(rows, columns, queries) {
       }
       temp.push(init_arr[x_p][y_p]);
       x_p++;
-      init_arr[x_p - 1][y_p] = init_arr[x_p][y_p];
     }
     while (true) {
       if (y_p <= y1) {
@@ -45,7 +41,6 @@ function solution(rows, columns, queries) {
       }
       temp.push(init_arr[x_p][y_p]);
       y_p--;
-      init_arr[x_p][y_p + 1] = init_arr[x_p][y_p];
     }
     while (true) {
       if (x_p <= x1) {
@@ -53,7 +48,6 @@ function solution(rows, columns, queries) {
       }
       temp.push(init_arr[x_p][y_p]);
       x_p--;
-      init_arr[x_p + 1][y_p] = init_arr[x_p][y_p];
     }
 
     answer.push(Math.min(...temp));
@@ -88,15 +82,16 @@ function solution(rows, columns, queries) {
       init_arr[x_p][y_p] = temp.shift();
       x_p--;
     }
+    console.log(init_arr);
   }
 
   return answer;
 }
 
 console.log(
-  solution(3, 4, [
-    [1, 1, 2, 2],
-    [1, 1, 2, 2],
-    [1, 1, 2, 2],
+  solution(6, 6, [
+    [2, 2, 5, 4],
+    [3, 3, 6, 6],
+    [5, 1, 6, 3],
   ])
 );

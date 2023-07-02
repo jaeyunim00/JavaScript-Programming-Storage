@@ -1,29 +1,9 @@
-function solution(numbers) {
-  // numbers = numbers.split("").map(Number);
-  // console.log(numbers);
-
-  let temp = [];
-  function recur(comb, others) {
-    if (comb !== "") {
-      temp.push(comb);
-    }
-
-    for (let i = 0; i < others.length; i++) {
-      console.log(comb, others);
-      recur(comb + others[i], others.slice(0, i) + others.slice(i + 1));
-    }
-  }
-
-  recur("", numbers);
+function solution(storey) {
+  let answer = 0;
+  storey = storey.toString().split("").map(Number);
+  for (let i = storey.length - 1; i >= 0; i--) {}
+  console.log(storey);
+  return answer;
 }
 
-function isPrime(num) {
-  for (let i = 2; i < num; i++) {
-    if (num % i == 0) {
-      return false;
-    }
-  }
-  return true;
-}
-
-console.log(solution("17"));
+console.log(solution(56));
